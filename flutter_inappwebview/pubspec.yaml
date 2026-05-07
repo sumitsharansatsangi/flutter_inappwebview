@@ -1,6 +1,7 @@
 name: flutter_inappwebview
 description: A Flutter plugin that allows you to add an inline webview, to use an headless webview, and to open an in-app browser window.
 version: 6.2.0-beta.3
+publish_to: none
 homepage: https://inappwebview.dev/
 repository: https://github.com/pichillilorenzo/flutter_inappwebview
 issue_tracker: https://github.com/pichillilorenzo/flutter_inappwebview/issues
@@ -14,26 +15,26 @@ topics:
   - browser
 
 environment:
-  sdk: ^3.8.0
-  flutter: ">=3.32.0"
+  sdk: ^3.11.0
+  flutter: ">=3.41.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview_platform_interface: ^1.4.0-beta.3
-    # path: ../flutter_inappwebview_platform_interface
-  flutter_inappwebview_android: ^1.2.0-beta.3
-    # path: ../flutter_inappwebview_android
-  flutter_inappwebview_ios: ^1.2.0-beta.3
-    # path: ../flutter_inappwebview_ios
-  flutter_inappwebview_macos: ^1.2.0-beta.3
-    # path: ../flutter_inappwebview_macos
-  flutter_inappwebview_web: ^1.2.0-beta.3
-    # path: ../flutter_inappwebview_web
-  flutter_inappwebview_windows: ^0.7.0-beta.3
-    # path: ../flutter_inappwebview_windows
-  flutter_inappwebview_linux: ^0.1.0-beta.1
-    # path: ../flutter_inappwebview_linux
+  flutter_inappwebview_platform_interface: 
+    git: https://github.com/kumsumit/flutter_inappwebview_platform_interface.git
+  flutter_inappwebview_android: 
+    git: https://github.com/kumsumit/flutter_inappwebview_android.git
+  flutter_inappwebview_ios:
+    git: https://github.com/kumsumit/flutter_inappwebview_ios.git
+  flutter_inappwebview_macos:
+    git: https://github.com/kumsumit/flutter_inappwebview_macos.git
+  flutter_inappwebview_web:
+    git: https://github.com/kumsumit/flutter_inappwebview_web.git
+  flutter_inappwebview_windows:
+    git: https://github.com/kumsumit/flutter_inappwebview_windows.git
+  flutter_inappwebview_linux:
+    git: https://github.com/kumsumit/flutter_inappwebview_linux.git
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +42,7 @@ dev_dependencies:
   flutter_driver:
     sdk: flutter
   flutter_lints: ^6.0.0
-  build_runner: ^2.4.12
+  build_runner: ^2.15.0
   generators:
     path: ../dev_packages/generators
 
